@@ -1,0 +1,206 @@
+.App {
+  width: 100%;
+  height: 100vh; /* 高度设为视口高度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* 允许内容垂直堆叠 */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* 将主内容设置为列方向排列 */
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.show {
+  border: 0px #4ef982 solid;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: colorCycle 4s infinite;
+}
+
+.awesome {
+  height: 350px;
+  z-index: 0;
+}
+
+.textList {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center;
+  margin-left: 20px; /* 与主图保持一定距离 */
+}
+
+.text {
+  color: #febe6b;
+  font-weight: bold;
+  font-size: 20px; /* 缩小字体大小 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  margin-bottom: 10px; /* 按钮和主图之间的间距 */
+}
+
+.button {
+  background: #4ef982;
+  color: white;
+  font-size: 20px; /* 缩小按钮字体 */
+  font-weight: bold;
+  margin-right: 10px; /* 按钮之间的间距 */
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.art {
+  font-family: "pix M 8pt";
+  font-size: 70px;
+  color: #d0f3cb;
+  display: flex;
+  align-items: center;
+  scale: 1.5 4;
+}
+
+.icon {
+  width: 50px; /* 缩小图标 */
+}
+
+.middle {
+  height: 75px; /* 缩小中间高度 */
+  z-index: 1;
+}
+
+.HAT, .FACE, .MISC, .EFFECT {
+  scale: 1; /* 缩小比例 */
+}
+
+.empty {
+  width: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.man-container {
+  position: relative;
+}
+
+.hat {
+  position: absolute;
+  left: 49px;
+  top: 45px;
+}
+
+.face {
+  position: absolute;
+  left: 49px;
+  top: 45px;
+}
+
+.effect {
+  position: absolute;
+  left: 43px;
+  top: 67px;
+}
+
+.misc {
+  position: absolute;
+  left: 41px;
+  top: 67px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* 与主内容的间距 */
+}
+
+.footer a {
+  background: #4ef982;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 10px; /* 按钮之间的间距 */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.footer a:hover {
+  transform: scale(1.1); /* 鼠标悬停动画效果 */
+}
+
+@keyframes colorCycle {
+  0% {
+    background-color: #4ef982;
+  }
+  25% {
+    background-color: #f94144;
+  }
+  50% {
+    background-color: #f8961e;
+  }
+  75% {
+    background-color: #f9c74f;
+  }
+  100% {
+    background-color: #4ef982;
+  }
+}
+
+.button {
+  background: #4ef982;
+  color: white;
+  font-size: 20px; /* 缩小按钮字体 */
+  font-weight: bold;
+  margin-right: 10px; /* 按钮之间的间距 */
+  padding: 5px 20px;
+  cursor: pointer;
+  animation: colorCycle 4s infinite; /* 添加动画 */
+}
+
+.footer a {
+  background: #4ef982;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 10px; /* 按钮之间的间距 */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s;
+  animation: colorCycle 4s infinite; /* 添加动画 */
+}
+
+.footer a:hover {
+  transform: scale(1.1); /* 鼠标悬停动画效果 */
+}
+
+
+
